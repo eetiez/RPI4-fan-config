@@ -21,7 +21,7 @@ def temp_check():
 	address=0x1a
 	prevblock=0
 	while True:
-		temp = os.popen("/sys/class/thermal/thermal_zone0/temp").readline()
+		temp = os.popen("cat /sys/class/thermal/thermal_zone0/temp").readline()
 		val = float(temp)/1000
 		block = get_fanspeed(val, fanconfig)
 		if block < prevblock:
