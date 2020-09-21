@@ -5,6 +5,6 @@ After=multi-user.target
 Type=simple
 Restart=always
 RemainAfterExit=true
-ExecStart=/usr/bin/python3 argononed.py
+ExecStart=/usr/bin/python3 fan.py
 [Install]
 WantedBy=multi-user.target

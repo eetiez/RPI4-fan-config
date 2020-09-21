@@ -8,7 +8,7 @@ I2C must be enable. For those running Archlinux ARM image, instructions are give
 
 ## How to use it ?
 
-Simply copy `fan.service` and `fan.py` at the right place and adjust permissions.
+Simply copy (as root) `fan.service` and `fan.py` at the right place and adjust permissions.
 
 ```bash
 cp fan.service /lib/systemd/system/
