@@ -16,3 +16,15 @@ chmod 644 /lib/systemd/system/fan.service
 cp fan.py /usr/local/sbin/
 chmod 755 /usr/local/sbin/fan.py
 ```
+
+The daemon can then be launch with the command below :
+
+```bash
+systemctl start fan
+```
+
+If everything works (see `systemctl status fan`), you can enable the service in order to start it automatically after each reboot :
+
+```bash
+systemctl enable fan
+```
